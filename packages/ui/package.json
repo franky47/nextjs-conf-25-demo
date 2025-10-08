@@ -14,7 +14,7 @@
   },
   "scripts": {
     "test": "tsc",
-    "lint": "./node_modules/.bin/eslint . --max-warnings 0"
+    "lint": "eslint . --max-warnings 0"
   },
   "dependencies": {
     "@fontsource-variable/geist": "5.2.8",
