@@ -1,0 +1,14 @@
+{
+  "extends": "@root/typescript-config/base.json",
+  "compilerOptions": {
+    //"outDir": "dist"
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "baseUrl": ".",
+    "paths": {
+      "@root/db/*": ["./src/*"]
+    }
+  },
+  "include": ["."],
+  "exclude": ["node_modules", "dist"]
+}

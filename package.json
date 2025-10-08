@@ -1,0 +1,36 @@
+{
+  "name": "react-paris-25-demo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo run dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@root/eslint-config": "workspace:*",
+    "@root/typescript-config": "workspace:*",
+    "prettier": "^3.2.5",
+    "turbo": "^2.3.0",
+    "typescript": "5.5.4"
+  },
+  "packageManager": "pnpm@9.12.3",
+  "engines": {
+    "node": ">=23"
+  },
+  "prettier": {
+    "printWidth": 60,
+    "trailingComma": "es5",
+    "singleQuote": true,
+    "semi": false
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@swc/core",
+      "better-sqlite3",
+      "esbuild",
+      "sharp"
+    ]
+  }
+}
