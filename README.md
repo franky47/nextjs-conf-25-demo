@@ -1,6 +1,6 @@
-# React Paris 2025 Demo app
+# Next.js Conf 2025 Demo app
 
-This is the demo app showcased in my React Paris 2025 talk: "Type-Safe URL State Management in React with nuqs".
+This is the demo app showcased in my Next.js Conf 2025 talk: "Type-Safe URL State in Next.js with nuqs".
 
 ## Installation
 
@@ -13,10 +13,7 @@ pnpm install
 pnpm dev
 ```
 
-It will run:
-
-- On `http://localhost:3000`, a Next.js app
-- On `http://localhost:3001`, the same app with React Router v7
+It will run the demo app on http://localhost:3000.
 
 ## Albums demo
 
