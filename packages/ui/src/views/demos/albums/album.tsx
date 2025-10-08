@@ -1,8 +1,8 @@
-import type { Album } from '@root/db'
+import type { Album as AlbumType } from '@root/db'
 
 type AlbumProps = {
   data: Pick<
-    Album,
+    AlbumType,
     | 'id'
     | 'name'
     | 'artist'

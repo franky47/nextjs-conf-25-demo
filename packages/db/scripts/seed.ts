@@ -1,18 +1,13 @@
-import { SpotifyApi } from '@spotify/web-api-ts-sdk'
-import { generateText } from 'ai'
 import { createReadStream } from 'node:fs'
 import { resolve } from 'node:path'
 import { createInterface } from 'node:readline'
+import { generateText } from 'ai'
 import { ollama } from 'ollama-ai-provider-v2'
 import { db } from '../src/index.ts'
 import { albums } from '../src/schema.ts'
+import { spotify } from '../src/spotify.ts'
 
 const llama32 = ollama('llama3.2')
-
-const spotify = SpotifyApi.withClientCredentials(
-  process.env.SPOTIFY_CLIENT_ID!,
-  process.env.SPOTIFY_CLIENT_SECRET!
-)
 
 async function processAlbumRow(line: string) {
   const [_rank, _year, album, artist] = line.split(',')
@@ -57,9 +52,12 @@ async function processAlbumRow(line: string) {
         artist: result.artists
           .map((a) => a.name)
           .join(', '),
-        coverUrl: result.images[0]!.url,
+        coverUrl:
+          result.images[0]?.url ??
+          'https://placehold.co/300',
         releaseYear: parseInt(
-          result.release_date.slice(0, 4)
+          result.release_date.slice(0, 4),
+          10
         ),
         tracks: result.total_tracks,
       })

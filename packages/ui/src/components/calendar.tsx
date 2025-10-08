@@ -1,5 +1,11 @@
+/** biome-ignore-all lint/correctness/noNestedComponentDefinitions: "" */
 'use client'
 
+import {
+  Button,
+  buttonVariants,
+} from '@root/ui/components/button'
+import { cn } from '@root/ui/lib/utils'
 import {
   ChevronDownIcon,
   ChevronLeftIcon,
@@ -7,16 +13,10 @@ import {
 } from 'lucide-react'
 import * as React from 'react'
 import {
-  DayButton,
+  type DayButton,
   DayPicker,
   getDefaultClassNames,
 } from 'react-day-picker'
-
-import {
-  Button,
-  buttonVariants,
-} from '@root/ui/components/button'
-import { cn } from '@root/ui/lib/utils'
 
 function Calendar({
   className,
