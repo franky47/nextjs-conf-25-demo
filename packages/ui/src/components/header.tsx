@@ -1,6 +1,6 @@
 import { Suspense, type ReactNode } from 'react'
-import { QuerySpyBackground } from './query-spy.js'
-import { ThemeControl } from './theme-control.js'
+import { QuerySpyBackground } from './query-spy.tsx'
+import { ThemeControl } from './theme-control.tsx'
 
 type HeaderProps = {
   logo: ReactNode
