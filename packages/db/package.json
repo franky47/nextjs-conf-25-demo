@@ -4,6 +4,7 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "test": "tsc",
     "db:generate": "drizzle-kit generate",
     "db:introspect": "drizzle-kit introspect",
     "db:push": "drizzle-kit push",
