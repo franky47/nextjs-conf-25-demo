@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@types/better-sqlite3": "7.6.12",
-    "@types/node": "22.13.5",
+    "@types/node": "24.7.0",
     "@root/eslint-config": "workspace:*",
     "@root/typescript-config": "workspace:*",
     "drizzle-kit": "0.30.4",
