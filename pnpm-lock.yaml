@@ -83,7 +83,7 @@ importers:
         version: 1.2.0
       ai:
         specifier: 4.1.46
-        version: 4.1.46(react@19.2.0)(zod@3.24.2)
+        version: 4.1.46(react@19.2.0)(zod@4.1.12)
       better-sqlite3:
         specifier: 11.8.1
         version: 11.8.1
@@ -92,7 +92,7 @@ importers:
         version: 0.39.1(@opentelemetry/api@1.9.0)(@types/better-sqlite3@7.6.12)(@types/react@19.2.2)(better-sqlite3@11.8.1)(react@19.2.0)
       ollama-ai-provider:
         specifier: 1.2.0
-        version: 1.2.0(zod@3.24.2)
+        version: 1.2.0(zod@4.1.12)
       spotify-uri:
         specifier: 4.1.0
         version: 4.1.0
@@ -244,8 +244,8 @@ importers:
         specifier: ^1.1.2
         version: 1.1.2(@types/react-dom@19.2.1(@types/react@19.2.2))(@types/react@19.2.2)(react-dom@19.0.0(react@19.2.0))(react@19.2.0)
       zod:
-        specifier: 3.24.2
-        version: 3.24.2
+        specifier: 4.1.12
+        version: 4.1.12
     devDependencies:
       '@root/db':
         specifier: workspace:*
@@ -3957,41 +3957,41 @@ packages:
     peerDependencies:
       zod: ^3.24.1
 
-  zod@3.24.2:
-    resolution: {integrity: sha512-lY7CDW43ECgW9u1TcT3IoXHflywfVqDYze4waEz812jR/bZ8FHDsl7pFQoSZTz5N+2NqRXs8GBwnAwo3ZNxqhQ==}
+  zod@4.1.12:
+    resolution: {integrity: sha512-JInaHOamG8pt5+Ey8kGmdcAcg3OL9reK8ltczgHTAwNhMys/6ThXHityHxVV2p3fkw/c+MAvBHFVYHFZDmjMCQ==}
 
 snapshots:
 
-  '@ai-sdk/provider-utils@2.1.10(zod@3.24.2)':
+  '@ai-sdk/provider-utils@2.1.10(zod@4.1.12)':
     dependencies:
       '@ai-sdk/provider': 1.0.9
       eventsource-parser: 3.0.0
       nanoid: 3.3.8
       secure-json-parse: 2.7.0
     optionalDependencies:
-      zod: 3.24.2
+      zod: 4.1.12
 
   '@ai-sdk/provider@1.0.9':
     dependencies:
       json-schema: 0.4.0
 
-  '@ai-sdk/react@1.1.18(react@19.2.0)(zod@3.24.2)':
+  '@ai-sdk/react@1.1.18(react@19.2.0)(zod@4.1.12)':
     dependencies:
-      '@ai-sdk/provider-utils': 2.1.10(zod@3.24.2)
-      '@ai-sdk/ui-utils': 1.1.16(zod@3.24.2)
+      '@ai-sdk/provider-utils': 2.1.10(zod@4.1.12)
+      '@ai-sdk/ui-utils': 1.1.16(zod@4.1.12)
       swr: 2.3.2(react@19.2.0)
       throttleit: 2.1.0
     optionalDependencies:
       react: 19.2.0
-      zod: 3.24.2
+      zod: 4.1.12
 
-  '@ai-sdk/ui-utils@1.1.16(zod@3.24.2)':
+  '@ai-sdk/ui-utils@1.1.16(zod@4.1.12)':
     dependencies:
       '@ai-sdk/provider': 1.0.9
-      '@ai-sdk/provider-utils': 2.1.10(zod@3.24.2)
-      zod-to-json-schema: 3.24.3(zod@3.24.2)
+      '@ai-sdk/provider-utils': 2.1.10(zod@4.1.12)
+      zod-to-json-schema: 3.24.3(zod@4.1.12)
     optionalDependencies:
-      zod: 3.24.2
+      zod: 4.1.12
 
   '@alloc/quick-lru@5.2.0': {}
 
@@ -5139,17 +5139,17 @@ snapshots:
       clean-stack: 2.2.0
       indent-string: 4.0.0
 
-  ai@4.1.46(react@19.2.0)(zod@3.24.2):
+  ai@4.1.46(react@19.2.0)(zod@4.1.12):
     dependencies:
       '@ai-sdk/provider': 1.0.9
-      '@ai-sdk/provider-utils': 2.1.10(zod@3.24.2)
-      '@ai-sdk/react': 1.1.18(react@19.2.0)(zod@3.24.2)
-      '@ai-sdk/ui-utils': 1.1.16(zod@3.24.2)
+      '@ai-sdk/provider-utils': 2.1.10(zod@4.1.12)
+      '@ai-sdk/react': 1.1.18(react@19.2.0)(zod@4.1.12)
+      '@ai-sdk/ui-utils': 1.1.16(zod@4.1.12)
       '@opentelemetry/api': 1.9.0
       jsondiffpatch: 0.6.0
     optionalDependencies:
       react: 19.2.0
-      zod: 3.24.2
+      zod: 4.1.12
 
   ajv@6.12.6:
     dependencies:
@@ -6830,13 +6830,13 @@ snapshots:
       define-properties: 1.2.1
       es-object-atoms: 1.0.0
 
-  ollama-ai-provider@1.2.0(zod@3.24.2):
+  ollama-ai-provider@1.2.0(zod@4.1.12):
     dependencies:
       '@ai-sdk/provider': 1.0.9
-      '@ai-sdk/provider-utils': 2.1.10(zod@3.24.2)
+      '@ai-sdk/provider-utils': 2.1.10(zod@4.1.12)
       partial-json: 0.1.7
     optionalDependencies:
-      zod: 3.24.2
+      zod: 4.1.12
 
   once@1.4.0:
     dependencies:
@@ -7923,8 +7923,8 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zod-to-json-schema@3.24.3(zod@3.24.2):
+  zod-to-json-schema@3.24.3(zod@4.1.12):
     dependencies:
-      zod: 3.24.2
+      zod: 4.1.12
 
-  zod@3.24.2: {}
+  zod@4.1.12: {}
