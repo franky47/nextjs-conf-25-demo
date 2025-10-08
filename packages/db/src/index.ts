@@ -19,7 +19,7 @@ function resolveDatabasePath() {
   )
 }
 
-console.log(resolveDatabasePath())
+// console.log(resolveDatabasePath())
 
 const databasePath = resolveDatabasePath()
 const sqlite = new Database(databasePath)

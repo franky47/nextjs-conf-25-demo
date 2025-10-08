@@ -6,6 +6,9 @@
       "cache": false,
       "persistent": true
     },
+    "test": {
+      "dependsOn": ["^test"]
+    },
     "build": {
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"]

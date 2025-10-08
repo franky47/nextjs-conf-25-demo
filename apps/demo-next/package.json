@@ -1,32 +1,36 @@
 {
   "name": "demo-next",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "type": "module",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "test": "tsc",
+    "lint": "eslint --max-warnings 0"
   },
   "dependencies": {
     "@root/db": "workspace:*",
     "@root/ui": "workspace:*",
-    "better-sqlite3": "11.8.1",
-    "lucide-react": "0.475.0",
-    "next": "15.2.3",
-    "nuqs": "2.4.1",
-    "react": "19.0.0",
-    "react-dom": "19.0.0"
+    "better-sqlite3": "12.4.1",
+    "lucide-react": "0.545.0",
+    "next": "15.6.0-canary.52",
+    "nuqs": "2.7.1",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
   },
   "devDependencies": {
-    "@types/node": "22.13.5",
-    "@types/react": "19.0.10",
-    "@types/react-dom": "19.0.4",
+    "@eslint/eslintrc": "^3.3.1",
     "@root/eslint-config": "workspace:^",
     "@root/typescript-config": "workspace:*",
-    "postcss": "8.5.3",
+    "@types/node": "24.7.0",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.1",
+    "eslint": "^9.37.0",
+    "eslint-config-next": "15.5.4",
+    "postcss": "8.5.6",
     "tailwindcss": "3.4.17",
-    "typescript": "5.7.3"
+    "typescript": "5.9.3"
   }
 }

@@ -3,7 +3,7 @@ import { generateText } from 'ai'
 import { createReadStream } from 'node:fs'
 import { resolve } from 'node:path'
 import { createInterface } from 'node:readline'
-import { ollama } from 'ollama-ai-provider'
+import { ollama } from 'ollama-ai-provider-v2'
 import { db } from './index.ts'
 import { albums } from './schema.ts'
 

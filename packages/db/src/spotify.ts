@@ -1,6 +1,6 @@
 import { SpotifyApi } from '@spotify/web-api-ts-sdk'
 import { generateText } from 'ai'
-import { ollama } from 'ollama-ai-provider'
+import { ollama } from 'ollama-ai-provider-v2'
 import { parse as parseSpotifyUri } from 'spotify-uri'
 import type { NewAlbum } from './schema.ts'
 
