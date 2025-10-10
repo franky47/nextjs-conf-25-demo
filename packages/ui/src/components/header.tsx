@@ -13,7 +13,7 @@ export function Header({ logo, querySpy }: HeaderProps) {
       <Suspense fallback={<QuerySpyBackground />}>
         {querySpy}
       </Suspense>
-      <header className="h-16 flex items-center justify-between gap-2 pl-2 pr-4">
+      <header className="flex h-16 items-center justify-between gap-2 pr-4 pl-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 500 500"

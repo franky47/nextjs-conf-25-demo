@@ -33,7 +33,7 @@ export function QuerySpy({
     ))
   if (items.length === 0) {
     return (
-      <QuerySpyBackground className="italic text-gray-500">
+      <QuerySpyBackground className="text-gray-500 italic">
         &lt;empty query&gt;
       </QuerySpyBackground>
     )
@@ -55,7 +55,7 @@ export function QuerySpyBackground({
   return (
     <pre
       className={cn(
-        'text-[22px] border px-3 py-2 mx-2 my-2 rounded-lg',
+        'mx-2 my-2 rounded-lg border px-3 py-2 text-[22px]',
         className
       )}
       {...props}

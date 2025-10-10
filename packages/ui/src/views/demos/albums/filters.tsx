@@ -13,11 +13,11 @@ export function Filters() {
         //   setSearchParams({ query: e.target.value })
         // }
         placeholder="Search albums"
-        className="text-xl py-5 flex-2 lg:flex-1"
+        className="flex-2 py-5 text-xl lg:flex-1"
       />
       <Input
         type="number"
-        className="w-28 text-xl py-5 flex-1"
+        className="w-28 flex-1 py-5 text-xl"
         // value={releaseYear ?? ''}
         // onChange={(e) =>
         //   setSearchParams({
@@ -30,7 +30,7 @@ export function Filters() {
         // }
         placeholder="Year"
       />
-      <Button className="flex-1 text-lg px-4">Clear</Button>
+      <Button className="flex-1 px-4 text-lg">Clear</Button>
     </FiltersSection>
   )
 }

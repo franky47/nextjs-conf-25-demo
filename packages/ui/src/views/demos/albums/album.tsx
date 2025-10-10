@@ -14,17 +14,17 @@ type AlbumProps = {
 
 export function Album({ data }: AlbumProps) {
   return (
-    <figure className="flex flex-col gap-2">
+    <figure className="flex flex-col gap-2 bg-red-500">
       <img
         src={`/img/albums/${data.id}.jpg`}
         alt={data.name}
-        className="aspect-square object-cover rounded-md"
+        className="aspect-square rounded-md object-cover"
       />
       <figcaption className="">
-        <div className="leading-tight mb-1">
+        <div className="mb-1 leading-tight">
           {data.name}
         </div>
-        <div className="text-sm text-gray-700 dark:text-gray-300">
+        <div className="text-gray-700 text-sm dark:text-gray-300">
           {data.artist} • <span>{data.releaseYear}</span>
         </div>
       </figcaption>
