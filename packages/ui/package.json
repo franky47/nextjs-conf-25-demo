@@ -14,7 +14,7 @@
   },
   "scripts": {
     "test": "tsc",
-    "lint": "eslint . --max-warnings 0"
+    "lint": "biome check ."
   },
   "dependencies": {
     "@fontsource-variable/geist": "5.2.8",
@@ -51,7 +51,6 @@
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.1",
     "@root/db": "workspace:*",
-    "@root/eslint-config": "workspace:*",
     "@root/typescript-config": "workspace:*",
     "autoprefixer": "10.4.21",
     "postcss": "8.5.6",

@@ -5,7 +5,7 @@ import { Suspense } from 'react'
 export default function Page() {
   return (
     <>
-      <div className="flex items-center justify-center mt-12">
+      <div className="mt-12 flex items-center justify-center">
         <Suspense>
           <CounterButton />
         </Suspense>
@@ -13,7 +13,7 @@ export default function Page() {
       <nav className="mt-24 text-center">
         <Link
           href="/albums"
-          className="underline text-gray-500"
+          className="text-gray-500 underline"
         >
           SSR demo
         </Link>

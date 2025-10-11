@@ -1,12 +1,12 @@
-@import '@fontsource-variable/geist';
+@import "@fontsource-variable/geist";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --font-sans: 'Geist Variable', sans-serif;
-    --font-mono: 'Menlo', monospace;
+    --font-sans: "Geist Variable", sans-serif;
+    --font-mono: "Menlo", monospace;
 
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;

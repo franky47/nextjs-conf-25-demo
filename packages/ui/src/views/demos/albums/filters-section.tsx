@@ -5,7 +5,7 @@ export function FiltersSection(
 ) {
   return (
     <nav
-      className="px-4 mt-2 flex flex-wrap gap-2 items-center"
+      className="mt-2 flex flex-wrap items-center gap-2 px-4"
       {...props}
     />
   )

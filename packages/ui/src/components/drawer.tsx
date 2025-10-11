@@ -1,9 +1,8 @@
 'use client'
 
+import { cn } from '@root/ui/lib/utils'
 import * as React from 'react'
 import { Drawer as DrawerPrimitive } from 'vaul'
-
-import { cn } from '@root/ui/lib/utils'
 
 const Drawer = ({
   shouldScaleBackground = true,
@@ -100,7 +99,7 @@ const DrawerTitle = React.forwardRef<
   <DrawerPrimitive.Title
     ref={ref}
     className={cn(
-      'text-lg font-semibold leading-none tracking-tight',
+      'font-semibold text-lg leading-none tracking-tight',
       className
     )}
     {...props}
@@ -117,7 +116,7 @@ const DrawerDescription = React.forwardRef<
   <DrawerPrimitive.Description
     ref={ref}
     className={cn(
-      'text-sm text-muted-foreground',
+      'text-muted-foreground text-sm',
       className
     )}
     {...props}

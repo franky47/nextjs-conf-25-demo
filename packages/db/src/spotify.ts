@@ -2,15 +2,23 @@ import { SpotifyApi } from '@spotify/web-api-ts-sdk'
 import { generateText } from 'ai'
 import { ollama } from 'ollama-ai-provider-v2'
 import { parse as parseSpotifyUri } from 'spotify-uri'
+import { z } from 'zod'
 import type { NewAlbum } from './schema.ts'
 
 export { parseSpotifyUri }
 
 const model = ollama('llama3.2')
 
+const env = z
+  .object({
+    SPOTIFY_CLIENT_ID: z.string(),
+    SPOTIFY_CLIENT_SECRET: z.string(),
+  })
+  .parse(process.env)
+
 export const spotify = SpotifyApi.withClientCredentials(
-  process.env.SPOTIFY_CLIENT_ID!,
-  process.env.SPOTIFY_CLIENT_SECRET!
+  env.SPOTIFY_CLIENT_ID,
+  env.SPOTIFY_CLIENT_SECRET
 )
 
 export function getSpotifyAlbumId(uri: string) {
@@ -30,8 +38,12 @@ export async function findAlbumById(
     id: result.id,
     name: result.name,
     artist: result.artists.map((a) => a.name).join(', '),
-    coverUrl: result.images[0]!.url,
-    releaseYear: parseInt(result.release_date.slice(0, 4)),
+    coverUrl:
+      result.images[0]?.url ?? 'https://placehold.co/300',
+    releaseYear: parseInt(
+      result.release_date.slice(0, 4),
+      10
+    ),
     tracks: result.total_tracks,
   }
 }
@@ -74,8 +86,12 @@ export async function fetchAlbumData(
     id: result.id,
     name: cleanedUpAlbumName,
     artist: result.artists.map((a) => a.name).join(', '),
-    coverUrl: result.images[0]!.url,
-    releaseYear: parseInt(result.release_date.slice(0, 4)),
+    coverUrl:
+      result.images[0]?.url ?? 'https://placehold.co/300',
+    releaseYear: parseInt(
+      result.release_date.slice(0, 4),
+      10
+    ),
     tracks: result.total_tracks,
   }
 }
