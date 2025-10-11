@@ -14,7 +14,7 @@ type AlbumProps = {
 
 export function Album({ data }: AlbumProps) {
   return (
-    <figure className="flex flex-col gap-2 bg-red-500">
+    <figure className="flex flex-col gap-2">
       <img
         src={`/img/albums/${data.id}.jpg`}
         alt={data.name}
