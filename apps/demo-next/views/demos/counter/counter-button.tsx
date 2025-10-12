@@ -6,7 +6,10 @@ import { Button } from '@/components/button'
 export function CounterButton() {
   const [count, setCount] = useState(0)
   return (
-    <Button onClick={() => setCount((c) => c + 1)}>
+    <Button
+      className="rounded-xl p-8 text-2xl tabular-nums"
+      onClick={() => setCount((c) => c + 1)}
+    >
       Count: {count}
     </Button>
   )
