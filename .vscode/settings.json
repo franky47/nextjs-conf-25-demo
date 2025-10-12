@@ -1,7 +1,16 @@
 {
   "github.copilot.chat.codeGeneration.useInstructionFiles": true,
   "editor.fontSize": 22,
+  "editor.lineNumbers": "off",
   "editor.snippetSuggestions": "none",
+  "editor.minimap.enabled": false,
+  "zenMode.centerLayout": false,
+  "zenMode.fullScreen": false,
+  "zenMode.hideLineNumbers": true,
+  "zenMode.hideActivityBar": true,
+  "zenMode.hideStatusBar": true,
+  "zenMode.showTabs": "none",
+  "window.title": "${activeEditorShort}${separator}nuqs${separator}Next.js Conf 2025",
   // Biome configuration
   "biome.lsp.bin": "./node_modules/.bin/biome",
   "editor.formatOnSave": true,
@@ -31,25 +40,33 @@
   },
   "workbench.colorCustomizations": {
     "[One Monokai]": {
-      "editorGroup.emptyBackground": "#101113", // 1b1c21
-      "editor.background": "#000000", // "#18191e",
-      "editor.lineHighlightBackground": "#373d4872", // 373d4872
-      "activityBar.activeBackground": "#40444e", // 40444e
-      "activityBar.activeBorder": "#828dac", // 828dac
-      "activityBar.background": "#101113", // 1b1c21
-      "titleBar.inactiveBackground": "#101113", // 1b1c21
-      "titleBar.activeBackground": "#101113", // 1b1c21
-      "statusBar.background": "#101113", // 1b1c21
-      "editorGroupHeader.tabsBackground": "#101113", // 1b1c21
-      "tab.activeBackground": "#212329", // 2d323b
-      "tab.inactiveBackground": "#17191d", // 212329
-
+      "editorGroup.emptyBackground": "#101113",
+      "editor.background": "#000000",
+      "editor.lineHighlightBackground": "#373d4872",
+      "activityBar.activeBackground": "#40444e",
+      "activityBar.activeBorder": "#828dac",
+      "activityBar.background": "#101113",
+      "titleBar.inactiveBackground": "#101113",
+      "titleBar.activeBackground": "#101113",
+      "statusBar.background": "#101113",
+      "editorGroupHeader.tabsBackground": "#101113",
+      "tab.activeBackground": "#212329",
+      "tab.inactiveBackground": "#17191d",
+      "sideBar.background": "#101113",
+      "sideBar.border": "#373d4872",
+      "sideBarSectionHeader.background": "#212329",
+      "list.hoverBackground": "#373d4872",
+      "list.activeSelectionBackground": "#373d4872",
+      "list.inactiveSelectionBackground": "#373d4872",
       "quickInput.background": "#101113",
-
-      "editorInlayHint.foreground": "#676f7d",
+      "editorInlayHint.foreground": "#344c76",
       "editorInlayHint.background": "#0000",
       "editorInlayHint.typeForeground": "#597185",
-      "editorInlayHint.parameterForeground": "#7d7567"
+      "editorInlayHint.parameterForeground": "#7d7567",
+      "terminal.background": "#101113",
+      "terminal.selectionBackground": "#373d4872",
+      "panel.background": "#101113",
+      "panel.border": "#373d4872"
     }
   }
 }
