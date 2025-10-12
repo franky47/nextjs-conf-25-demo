@@ -1,6 +1,7 @@
-import '@root/ui/globals.css'
-import { ThemeProvider } from '@root/ui/lib/theme-provider'
+import '@/styles/globals.css'
+
 import { NuqsAdapter } from 'nuqs/adapters/next/app'
+import { ThemeProvider } from '@/lib/theme-provider'
 
 export default function RootLayout({
   children,

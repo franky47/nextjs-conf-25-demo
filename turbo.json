@@ -18,11 +18,6 @@
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
       "outputs": [".next/**", "!.next/cache/**"]
     },
-    "demo-react-router": {
-      "dependsOn": ["^build"],
-      "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": [".react-router/**", "build/**"]
-    },
     "lint": {
       "dependsOn": ["^lint"]
     },
