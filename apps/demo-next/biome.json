@@ -9,5 +9,15 @@
       "!next-env.d.ts",
       "!.next"
     ]
+  },
+  "linter": {
+    "rules": {
+      "suspicious": {
+        "noUnknownAtRules": "off"
+      },
+      "performance": {
+        "noImgElement": "off"
+      }
+    }
   }
 }
