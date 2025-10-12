@@ -1,6 +1,6 @@
-import { CounterButton } from '@root/ui/views/demos/counter/counter-button'
 import Link from 'next/link'
 import { Suspense } from 'react'
+import { CounterButton } from '@/views/demos/counter/counter-button'
 
 export default function Page() {
   return (
@@ -13,7 +13,7 @@ export default function Page() {
       <nav className="mt-24 text-center">
         <Link
           href="/albums"
-          className="text-gray-500 underline"
+          className="text-zinc-500 underline"
         >
           SSR demo
         </Link>
