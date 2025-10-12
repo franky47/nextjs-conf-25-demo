@@ -7,7 +7,7 @@ export function CounterButton() {
   const [count, setCount] = useState(0)
   return (
     <Button onClick={() => setCount((c) => c + 1)}>
-      With useState: {count}
+      Count: {count}
     </Button>
   )
 }
