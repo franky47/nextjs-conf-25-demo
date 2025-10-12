@@ -20,7 +20,7 @@ export function Album({ data }: AlbumProps) {
         alt={data.name}
         className="aspect-square rounded-md object-cover"
       />
-      <figcaption className="">
+      <figcaption>
         <div className="mb-1 leading-tight">
           {data.name}
         </div>
