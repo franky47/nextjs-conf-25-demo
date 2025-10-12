@@ -1,7 +1,9 @@
 {
   "github.copilot.chat.codeGeneration.useInstructionFiles": true,
   "editor.fontSize": 22,
+  "terminal.integrated.fontSize": 12,
   "editor.lineNumbers": "off",
+  "editor.rulers": [60],
   "editor.snippetSuggestions": "none",
   "editor.minimap.enabled": false,
   "zenMode.centerLayout": false,
@@ -41,8 +43,9 @@
   "workbench.colorCustomizations": {
     "[One Monokai]": {
       "editorGroup.emptyBackground": "#101113",
-      "editor.background": "#000000",
+      "editor.background": "#09090B",
       "editor.lineHighlightBackground": "#373d4872",
+      "editorRuler.foreground": "#373d4872",
       "activityBar.activeBackground": "#40444e",
       "activityBar.activeBorder": "#828dac",
       "activityBar.background": "#101113",
@@ -60,13 +63,16 @@
       "list.inactiveSelectionBackground": "#373d4872",
       "quickInput.background": "#101113",
       "editorInlayHint.foreground": "#344c76",
-      "editorInlayHint.background": "#0000",
+      "editorInlayHint.background": "#09090B",
       "editorInlayHint.typeForeground": "#597185",
       "editorInlayHint.parameterForeground": "#7d7567",
       "terminal.background": "#101113",
       "terminal.selectionBackground": "#373d4872",
       "panel.background": "#101113",
-      "panel.border": "#373d4872"
+      "panel.border": "#373d4872",
+      // Code colours
+      "editorWhitespace.foreground": "#232427",
+      "editor.selectionBackground": "#48505f72"
     }
   }
 }
