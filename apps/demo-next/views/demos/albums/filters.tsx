@@ -2,19 +2,20 @@
 
 import { Button } from '@/components/button'
 import { Input } from '@/components/input'
+import { SearchInput } from '@/components/search-input'
 import { FiltersSection } from './filters-section'
 
 export function Filters() {
   const onClear = () => {}
   return (
     <FiltersSection>
-      <Input
+      <SearchInput
         // value={query}
         // onChange={(e) =>
         //   setSearchParams({ query: e.target.value })
         // }
         placeholder="Search albums"
-        className="flex-2 py-5 text-xl lg:flex-1"
+        className="flex-2 text-xl lg:flex-1"
       />
       <Input
         type="number"
