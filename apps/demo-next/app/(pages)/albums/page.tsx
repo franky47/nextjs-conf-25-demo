@@ -26,19 +26,16 @@ export default async function AlbumsPage() {
   )
 }
 
-export async function generateMetadata({
-  searchParams,
-}: PageProps<'/albums'>) {
-  const filters = await loadFilters(searchParams)
-  const totalAlbums =
-    await database.countMatchingAlbums(filters)
-  const hasQuery = filters.query || filters.releaseYear
+export async function generateMetadata() {
+  const { totalAlbums, matchingAlbums } =
+    await database.countAlbums()
+  const hasFilter = totalAlbums !== matchingAlbums
   return {
     title:
       totalAlbums === 0
         ? 'No albums'
-        : hasQuery
-          ? `${totalAlbums} albums`
+        : hasFilter
+          ? `${matchingAlbums} albums`
           : `All albums`,
   }
 }
