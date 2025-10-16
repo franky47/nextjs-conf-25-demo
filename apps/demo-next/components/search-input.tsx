@@ -18,7 +18,7 @@ export function SearchInput({
     <InputGroup className="py-5">
       <InputGroupInput {...props} />
       <InputGroupAddon align="inline-end">
-        {isLoading && <Spinner />}
+        {isLoading && <Spinner className="stroke-[2.5]" />}
       </InputGroupAddon>
     </InputGroup>
   )
