@@ -1,4 +1,5 @@
 import { database } from '@root/db/queries'
+import Link from 'next/link'
 import { Suspense } from 'react'
 import { Album } from '@/views/demos/albums/album'
 import { AlbumGrid } from '@/views/demos/albums/album-grid'
@@ -13,7 +14,12 @@ export default async function AlbumsPage() {
       </Suspense>
       <AlbumGrid>
         {albums.map((album) => (
-          <Album key={album.id} data={album} />
+          <Link
+            key={album.id}
+            href={{ pathname: `/albums/${album.id}` }}
+          >
+            <Album data={album} />
+          </Link>
         ))}
       </AlbumGrid>
     </>
