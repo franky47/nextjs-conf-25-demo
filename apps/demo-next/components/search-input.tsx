@@ -7,23 +7,18 @@ import {
 import { Spinner } from './spinner'
 
 type SearchInputProps = ComponentProps<'input'> & {
-  spinner?: 'queued' | 'fetching'
+  isLoading?: boolean
 }
 
 export function SearchInput({
-  spinner,
+  isLoading = false,
   ...props
 }: SearchInputProps) {
   return (
     <InputGroup className="py-5">
       <InputGroupInput {...props} />
       <InputGroupAddon align="inline-end">
-        {spinner === 'fetching' && (
-          <Spinner className="text-orange-500" />
-        )}
-        {spinner === 'queued' && (
-          <Spinner className="text-blue-500" />
-        )}
+        {isLoading && <Spinner />}
       </InputGroupAddon>
     </InputGroup>
   )
