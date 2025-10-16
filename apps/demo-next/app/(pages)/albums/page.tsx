@@ -1,11 +1,14 @@
 import { database } from '@root/db/queries'
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Suspense } from 'react'
 import { Album } from '@/views/demos/albums/album'
 import { AlbumGrid } from '@/views/demos/albums/album-grid'
 import { Filters } from '@/views/demos/albums/filters'
 
-export default async function AlbumsPage() {
+export default async function AlbumsPage({
+  searchParams,
+}: PageProps<'/albums'>) {
   const albums = await database.findAlbums()
   return (
     <>
@@ -26,16 +29,6 @@ export default async function AlbumsPage() {
   )
 }
 
-export async function generateMetadata() {
-  const { totalAlbums, matchingAlbums } =
-    await database.countAlbums()
-  const hasFilter = totalAlbums !== matchingAlbums
-  return {
-    title:
-      totalAlbums === 0
-        ? 'No albums'
-        : hasFilter
-          ? `${matchingAlbums} albums`
-          : `All albums`,
-  }
-}
+export const metadata = {
+  title: 'Albums',
+} satisfies Metadata
