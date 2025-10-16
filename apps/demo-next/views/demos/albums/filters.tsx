@@ -41,3 +41,10 @@ export function Filters() {
     </FiltersSection>
   )
 }
+
+// const [isFetching, startFetchTransition] = useTransition()
+// const spinner = isFetching ? 'fetching' : undefined
+
+// const [isFetching, startFetchTransition] = useTransition()
+// const [isQueued, startQueueTransition] = useTransition()
+// const spinner = isQueued ? 'queued' : isFetching ? 'fetching' : undefined
