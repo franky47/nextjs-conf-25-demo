@@ -3,7 +3,7 @@ import Link from 'next/link'
 export function Favourites() {
   return (
     <nav>
-      <ul className="list-disc pl-8">
+      <ul className="list-disc pl-8 text-lg">
         <li>
           <Link
             className="hover:underline"
