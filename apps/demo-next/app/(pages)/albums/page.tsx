@@ -19,3 +19,20 @@ export default async function AlbumsPage() {
     </>
   )
 }
+
+export async function generateMetadata({
+  searchParams,
+}: PageProps<'/albums'>) {
+  const filters = await loadFilters(searchParams)
+  const totalAlbums =
+    await database.countMatchingAlbums(filters)
+  const hasQuery = filters.query || filters.releaseYear
+  return {
+    title:
+      totalAlbums === 0
+        ? 'No albums'
+        : hasQuery
+          ? `${totalAlbums} albums`
+          : `All albums`,
+  }
+}
