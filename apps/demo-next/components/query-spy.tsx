@@ -1,11 +1,48 @@
 'use client'
 
 import { useSearchParams } from 'next/navigation'
-import { type ComponentProps, Fragment } from 'react'
+import {
+  type ComponentProps,
+  Fragment,
+  useEffect,
+  useState,
+} from 'react'
 import { cn } from '@/lib/utils'
 
+function useOptimisticSearchParams() {
+  const uSP = useSearchParams()
+  const [searchParams, setSearchParams] = useState(
+    new URLSearchParams(uSP)
+  )
+  useEffect(() => {
+    setSearchParams(new URLSearchParams(uSP))
+  }, [uSP])
+  useEffect(() => {
+    const original = history.replaceState
+    history.replaceState = (
+      state,
+      unused,
+      url?: string | null
+    ) => {
+      original.call(history, state, unused, url)
+      if (!url) {
+        return
+      }
+      setTimeout(() => {
+        setSearchParams(
+          new URL(url, location.origin).searchParams
+        )
+      }, 0)
+    }
+    return () => {
+      history.replaceState = original
+    }
+  }, [])
+  return searchParams
+}
+
 export function QuerySpy() {
-  const searchParams = useSearchParams()
+  const searchParams = useOptimisticSearchParams()
   const items = Array.from(searchParams.entries())
     .filter(([, value]) => value !== null)
     .map(([key, value], index, list) => (
