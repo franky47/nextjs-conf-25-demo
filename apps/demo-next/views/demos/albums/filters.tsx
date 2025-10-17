@@ -11,9 +11,9 @@ export function Filters() {
     <FiltersSection>
       <SearchInput
         // value={query}
-        // onChange={(e) =>
+        // onChange={(e) => {
         //   setSearchParams({ query: e.target.value })
-        // }
+        // }}
         placeholder="Search albums"
         className="flex-2 text-xl lg:flex-1"
       />
