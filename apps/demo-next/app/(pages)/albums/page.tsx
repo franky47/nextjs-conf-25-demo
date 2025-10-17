@@ -1,3 +1,4 @@
+/** biome-ignore-all lint/correctness/noUnusedFunctionParameters: making it easier to demo */
 import { database } from '@root/db/queries'
 import type { Metadata } from 'next'
 import Link from 'next/link'
