@@ -1,6 +1,7 @@
 {
   "github.copilot.chat.codeGeneration.useInstructionFiles": true,
-  "editor.fontSize": 24,
+  "editor.fontSize": 20,
+  "window.zoomLevel": 2,
   "terminal.integrated.fontSize": 12,
   "editor.lineNumbers": "off",
   "editor.rulers": [60],
@@ -82,7 +83,6 @@
   //   "strings": false,
   //   "other": true
   // },
-  "editor.suggestOnTriggerCharacters": false,
   "typescript.preferences.autoImportSpecifierExcludeRegexes": [
     // Don't suggest these during the demo
     "^lucide-react$",
