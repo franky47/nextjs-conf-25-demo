@@ -10,7 +10,11 @@ import { Filters } from '@/views/demos/albums/filters'
 export default async function AlbumsPage({
   searchParams,
 }: PageProps<'/albums'>) {
-  const albums = await database.findAlbums()
+  const { query, releaseYear } = await searchParams
+  const albums = await database.findAlbums({
+    query: String(query ?? ''),
+    releaseYear: releaseYear ? Number(releaseYear) : null,
+  })
   return (
     <>
       <Suspense>
