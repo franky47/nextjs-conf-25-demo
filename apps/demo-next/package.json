@@ -4,10 +4,11 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --webpack",
     "build": "next build",
     "start": "next start",
     "test": "tsc",
+    "pretest": "next typegen",
     "lint": "biome check ."
   },
   "dependencies": {
@@ -20,7 +21,7 @@
     "lucide-react": "0.545.0",
     "next-themes": "0.4.6",
     "next": "16.0.0-beta.0",
-    "nuqs": "2.7.1",
+    "nuqs": "2.7.2",
     "react-dom": "19.2.0",
     "react": "19.2.0",
     "tailwind-merge": "3.3.1",

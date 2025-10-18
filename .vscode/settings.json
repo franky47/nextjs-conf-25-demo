@@ -1,6 +1,6 @@
 {
   "github.copilot.chat.codeGeneration.useInstructionFiles": true,
-  "editor.fontSize": 22,
+  "editor.fontSize": 24,
   "terminal.integrated.fontSize": 12,
   "editor.lineNumbers": "off",
   "editor.rulers": [60],
