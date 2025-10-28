@@ -33,3 +33,7 @@ You can do so by running:
 cd packages/db
 pnpm db:dl-images
 ```
+
+## Final state
+
+The final state of the demo app can be found on the [`post-demo-state` branch](https://github.com/franky47/nextjs-conf-25-demo/tree/post-demo-state) of this repository.
