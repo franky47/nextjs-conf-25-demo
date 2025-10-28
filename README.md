@@ -2,6 +2,9 @@
 
 This is the demo app showcased in my Next.js Conf 2025 talk: "Type-Safe URL State in Next.js with nuqs".
 
+- Video on YouTube: https://www.youtube.com/watch?v=qpczQVJMG1Y
+- Slides & useful links (shown at the end): https://nuqs.dev/nextjs-conf-25
+
 ## Installation
 
 It requires a Node.js version capable of running TypeScript natively.
